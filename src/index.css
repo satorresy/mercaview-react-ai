@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Instrument Serif", Georgia, serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-primary-50: #f5fbf7;
+  --color-primary-100: #e6f6ed;
+  --color-primary-200: #cfeadc;
+  --color-primary-300: #a5d5ba;
+  --color-primary-400: #73b891;
+  --color-primary-500: #49986e;
+  --color-primary-600: #3c7657; /* Spanish green MercaView */
+  --color-primary-700: #305e46;
+  --color-primary-800: #284c39;
+  --color-primary-950: #12241b;
+  
+  --color-cream-50: #fdfdfc;
+  --color-cream-100: #faf8f5; /* Warm background color */
+  --color-cream-200: #f3edd3;
+  --color-cream-300: #ebdcb2;
+  --color-cream-900: #211c11;
+}
+
+body {
+  background-color: #faf8f5;
+  color: #272a27;
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom horizontal scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
